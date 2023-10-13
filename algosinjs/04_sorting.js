@@ -40,19 +40,24 @@
 //  insertion(arr);
 //  console.log(arr);
 //QUICK SORT
-function quick(arr){
-    if(arr.length<2)
-        return arr;
-    let pivot = arr[arr.length-1];
-    const left = [];
-    const right = [];
-    for(let i=0;i<arr.length-1;i++){
-        if(arr[i] < pivot)
-            left.push(arr[i])
-        else
-            right.push(arr[i])
-    }
-    return [...quick(left),pivot,...quick(right)];
-}
-const arr = [8,0,20,-2,4,-6];
-console.log(quick(arr));
+// function quick(arr){
+//     if(arr.length<2)
+//         return arr;
+//     let pivot = arr[arr.length-1];
+//     const left = [];
+//     const right = [];
+//     for(let i=0;i<arr.length-1;i++){
+//         if(arr[i] < pivot)
+//             left.push(arr[i])
+//         else
+//             right.push(arr[i])
+//     }
+//     return [...quick(left),pivot,...quick(right)];
+// }
+// const arr = [8,0,20,-2,4,-6];
+// console.log(quick(arr));
+
+
+// worst case - O(n^2)
+// avg case - O(nlogn)
+//MERGE SORT
